@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Featured Products</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d8fafa;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #a078ff;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .search-bar button {
+            padding: 6px 10px;
+            margin-left: 5px;
+            border: none;
+            background-color: #0bc1b3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .logout-btn {
+            padding: 6px 10px;
+            background-color: #b2f0e6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .products {
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+            gap: 300px;
+            margin-top: 20px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+
+        .product p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .product button {
+            margin-top: 10px;
+            padding: 8px;
+            width: 100%;
+            background-color: #75dbe6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #4bcad9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Artheesh</h1>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>🔍</button>
+        </div>
+
+        <button class="logout-btn">Logout</button>
+    </div>
+
+    <div class="container">
+        <h2>Featured Products</h2>
+
+        <div class="products">
+        
+            <div class="product">
+                <img src="https://s1.aptocdn.com/www.fashionchingu.com/wp-content/uploads/2023/03/Jungkook-Black-Oblique-Zipper-Punk-Jacket-Inspiration-2.jpg" alt="Black Jacket">
+                <h3>Beautiful Black Jacket</h3>
+                <p>₹1999</p>
+                <button>Add to cart</button>
+            </div>
+
+    
+            <div class="product">
+                <img src="https://www.hitjacket.com/wp-content/uploads/2020/08/BTS-Dynamite-Jimins-Gucci-Satin-Jacket.jpg" alt="Green Jacket">
+                <h3>Beautiful Green Jacket</h3>
+                <p>₹1899</p>
+                <button>Add to cart</button>
+            </div>
+
+
+            <div class="product">
+                <img src="https://www.hleatherjackets.com/wp-content/uploads/2022/06/BTS-Yet-To-Come-Blue-Denim-Jacket.jpg" alt="Navy Jacket">
+                <h3>Beautiful Navy Blue Jacket</h3>
+                <p>₹1999</p>
+                <button>Add to cart</button>
+            </div>
+
+            
+            <div class="product">
+                <img src="https://cdn.i-scmp.com/sites/default/files/styles/1020x680/public/d8/images/canvas/2022/01/04/cbe933ab-831b-4131-8b89-bb8e04a83ea7_bf956110.jpg?itok=CO6shPf4&v=1641290198" alt="Pattern Jacket">
+                <h3>Beautiful Pattern Jacket</h3>
+                <p>₹1499</p>
+                <button>Add to cart</button>
+            </div>
+
+        
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkS7avneuQJVROuwAjinUvTWooQE-KgI8Az4Emohg6dnYm2Ssrd61hi8svIos1hso589E&usqp=CAU" alt="Brown Fur Jacket">
+                <h3>Stylish Brown Fur Jacket</h3>
+                <p>₹1799</p>
+                <button>Add to cart</button>
+            </div>
+
+        
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/63/ba/9d/63ba9d1d56b1ff44d116e951ccf52cf0.jpg" alt="Red Winter Jacket">
+                <h3>Red Winter Jacket</h3>
+                <p>₹2099</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+    

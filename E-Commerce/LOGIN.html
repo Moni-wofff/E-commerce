@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+        button {
+            width: 100%;
+            padding: 9px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid black;
+            background-color: #ececec;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f0f0;
+        }
+
+        form {
+            width: 350px;
+            background-color: rgb(254, 250, 250);
+            border: 2px solid #ece8e8;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return Validateform(event)">
+        <div class="container">
+            <h1>LOGIN FORM</h1>
+            <label>Name</label>
+            <input type="text" name="name" id="name"> <br><br>
+            <label>Email Id</label>
+            <input type="email" name="email" id="email"> <br><br>
+            <label>Password</label>
+            <input type="password" name="password" id="pass"><br><br>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+
+    <script>
+        function Validateform(event) {
+            event.preventDefault(); 
+
+            let a = document.getElementById('name');
+            let b = document.getElementById('email');
+            let c = document.getElementById('pass');
+
+            if (a.value === "") {
+                alert("Enter your name");
+                return false;
+            }
+
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!emailPattern.test(b.value)) {
+                alert("Enter a valid email");
+                return false;
+            }
+
+            if (c.value.length < 6) {
+                alert("Password must be at least 6 characters");
+                return false;
+            }
+
+            
+            direct();
+            return true;
+        }
+
+        function direct() {
+            window.location.href = "featured.html";
+        }
+    </script>
+</body>
+</html>
